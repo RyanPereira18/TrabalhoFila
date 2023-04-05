@@ -40,6 +40,8 @@
   }
  //--------------------------------------------------------------------------------
  function buscarCpf() {
+    let pos = 1;
+    let existe = false;
     const cpf = document.getElementById("txtNovoCpf").value.trim(); // o trim retira os espaços em branco
     const atendimentoBusca = new Atendimento(null,cpf); // vamos pesquisar só por CPF
     atendimentoBusca.cpf = cpf;
