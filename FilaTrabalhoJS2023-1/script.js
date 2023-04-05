@@ -42,7 +42,7 @@
  function buscarCpf() {
     const cpf = document.getElementById("txtNovoCpf").value.trim(); // o trim retira os espaços em branco
     const atendimentoBusca = new Atendimento(null,cpf); // vamos pesquisar só por CPF
-    atendimento.cpf = cpf;
+    atendimentoBusca.cpf = cpf;
     // para cada elemento da fila, verificar com o equals
     // Deve retornar a posição na fila e caso não seja encontrado avisar, crie um contador de posicões
     for (let item of minhaFila.itens) { // para cada elemento da fila
